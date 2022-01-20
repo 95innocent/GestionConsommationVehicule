@@ -24,7 +24,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         //
         // GET: /Profile/Details/5
 
-        public ActionResult Details(int id = 0)
+        public ActionResult  Details(int id = 0)
         {
             profile profile = db.profiles.Find(id);
             if (profile == null)
