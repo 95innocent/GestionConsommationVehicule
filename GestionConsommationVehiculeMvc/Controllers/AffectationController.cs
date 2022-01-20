@@ -25,7 +25,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         //
         // GET: /Affectation/Details/5
 
-        public ActionResult  Details(int id = 0)
+        public ActionResult Details(int id = 0)
         {
             affectation affectation = db.affectations.Find(id);
             if (affectation == null)
