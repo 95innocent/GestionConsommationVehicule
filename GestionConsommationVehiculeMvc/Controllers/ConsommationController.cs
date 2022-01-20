@@ -52,6 +52,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
                                               group x by new { x.DateConsommation } into g
                                               select new ConsommationModele
                                               {
+                                                 
                                                   DateConsommation = (g.Key.DateConsommation),
                                                   prixtotal = (g.Select(x => x.PrixTotal).Sum()),
                                                   //factura = (g.Select(x => x.facturationID).Count()),
