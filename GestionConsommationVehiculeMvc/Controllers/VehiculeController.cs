@@ -18,12 +18,12 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Index()
         {
-            return View(db.vehicules.ToList());
+            return  View(db.vehicules.ToList());
         }
 
         public ActionResult Index1()
         {
-            return View(db.vehicules.ToList());
+             return  View(db.vehicules.ToList());
         }
         //
         // GET: /Vehicule/Details/5
