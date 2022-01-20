@@ -95,7 +95,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Delete(int id = 0)
         {
-            vehicule vehicule = db.vehicules.Find(id);
+            vehicule   vehicule = db.vehicules.Find(id);
             if (vehicule == null)
             {
                 return HttpNotFound();
