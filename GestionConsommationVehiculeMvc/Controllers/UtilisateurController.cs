@@ -87,6 +87,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Create()
         {
+            
             ViewBag.IdProfile = new SelectList(db.profiles, "Id", "NomProfile");
             ViewBag.IdService = new SelectList(db.services, "Id", "NomService");
             return View();
