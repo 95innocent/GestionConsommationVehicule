@@ -101,6 +101,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
             return View(affectation);
         }
 
+
         //
         // POST: /Affectation/Edit/5
 
