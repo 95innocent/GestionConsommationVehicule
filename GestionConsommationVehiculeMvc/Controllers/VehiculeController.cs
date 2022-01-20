@@ -30,10 +30,10 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Details(int id = 0)
         {
-            vehicule vehicule = db.vehicules.Find(id);
+            vehicule  vehicule = db.vehicules.Find(id);
             if (vehicule == null)
             {
-                return HttpNotFound();
+                 return HttpNotFound();
             }
             return View(vehicule);
         }
