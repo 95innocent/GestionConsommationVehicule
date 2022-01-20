@@ -5,7 +5,8 @@
     border-radius: 1px;
 }
 
-.fixed-table-container {
+.fixed-table-container 
+{
     position: relative;
     clear: both;
     border: 1px solid #dddddd;
