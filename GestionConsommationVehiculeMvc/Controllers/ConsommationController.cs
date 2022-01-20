@@ -15,7 +15,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         //
         // GET: /Consommation/
-        public ActionResult Index3()
+        public ActionResult  Index3()
         {
             var consommations = db.consommations.Include(c => c.typeconsommation).Include(c => c.vehicule);
             return View(consommations.ToList());
