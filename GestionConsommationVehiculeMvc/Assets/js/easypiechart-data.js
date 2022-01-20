@@ -5,7 +5,8 @@ $(function() {
     });
 });
 
-$(function() {
+$(function ()
+{
     $('#easypiechart-orange').easyPieChart({
         scaleColor: false,
         barColor: '#ffb53e'
