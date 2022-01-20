@@ -18,7 +18,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Index()
         {
-            var utilisateurs = db.utilisateurs.Include(u => u.profile).Include(u => u.service);
+            var utilisateurs  = db.utilisateurs.Include(u => u.profile).Include(u => u.service);
             return View(utilisateurs.ToList());
         }
         public ActionResult Index1()
