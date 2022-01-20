@@ -20,7 +20,8 @@
  * limitations under the License.
  * ========================================================= */
 
-(function($, undefined){
+(function ($, undefined)
+{
 
 	var $window = $(window);
 
