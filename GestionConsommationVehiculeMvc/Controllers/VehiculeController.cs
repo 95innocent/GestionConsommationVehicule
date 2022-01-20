@@ -43,7 +43,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Create()
         {
-            return View();
+               return View();
         }
 
         //
