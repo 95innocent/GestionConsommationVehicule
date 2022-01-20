@@ -16,7 +16,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         //
         // GET: /Affectation/
 
-        public ActionResult  Index()
+        public ActionResult Index()
         {
             var affectations = db.affectations.Include(a => a.service).Include(a => a.utilisateur).Include(a => a.vehicule);
             return View(affectations.ToList());
