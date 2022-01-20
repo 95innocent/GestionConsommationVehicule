@@ -1,5 +1,6 @@
 ﻿$(function () {
-    $('.categorie_id').on('change',function () {
+    $('.categorie_id').on('change', function ()
+    {
         var id = $(this).val();
         alert(id);
         $.get('/Utilisateur/getProducts', { id: id }, function (data) {
@@ -8,7 +9,7 @@
             $.each(data, function (index, row)
             {
 
-                $('.product_id').append("<option value='" + row.Identity1 + "'>" + row.Plaque + "</option>")
+               $('.product_id').append("<option value='" + row.Identity1 + "'>" + row.Plaque + "</option>")
             });
         });
     });
