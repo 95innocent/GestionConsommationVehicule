@@ -39,6 +39,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Create()
         {
+           
             return View();
         }
 
@@ -50,6 +51,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 db.typeconsommations.Add(typeconsommation);
                 db.SaveChanges();
                 return RedirectToAction("Index");
