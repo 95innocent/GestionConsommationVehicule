@@ -39,7 +39,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Create()
         {
-            return View();
+             return View();
         }
 
         //
@@ -50,8 +50,8 @@ namespace GestionConsommationVehiculeMvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.services.Add(service);
-                db.SaveChanges();
+                 db.services.Add(service);
+                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
