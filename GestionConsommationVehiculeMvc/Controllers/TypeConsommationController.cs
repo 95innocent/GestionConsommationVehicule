@@ -98,6 +98,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
             if (typeconsommation == null)
             {
                 return HttpNotFound();
+
             }
             return View(typeconsommation);
         }
