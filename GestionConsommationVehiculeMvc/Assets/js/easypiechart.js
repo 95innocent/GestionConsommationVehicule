@@ -17,7 +17,8 @@
     else {
         factory(root.jQuery);
     }
-}(this, function($) {
+}(this, function ($)
+{
 
 /**
  * Renderer to render the chart on a canvas object
