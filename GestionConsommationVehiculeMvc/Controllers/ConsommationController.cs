@@ -74,7 +74,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
             return View(model);
         }
        
-        public ActionResult Index2()
+        public ActionResult  Index2()
         {
             List<ConsommationModele> model = (from K in db.consommations
                                               join Ve in db.vehicules on K.IdVehicule equals Ve.Id
