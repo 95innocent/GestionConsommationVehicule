@@ -67,7 +67,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Edit(int id = 0)
         {
-            vehicule vehicule = db.vehicules.Find(id);
+            vehicule vehicule  = db.vehicules.Find(id);
             if (vehicule == null)
             {
                 return HttpNotFound();
