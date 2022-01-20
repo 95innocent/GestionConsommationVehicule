@@ -24,7 +24,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         //
         // GET: /TypeConsommation/Details/5
 
-        public ActionResult Details(int id = 0)
+        public ActionResult   Details(int id = 0)
         {
             typeconsommation typeconsommation = db.typeconsommations.Find(id);
             if (typeconsommation == null)
