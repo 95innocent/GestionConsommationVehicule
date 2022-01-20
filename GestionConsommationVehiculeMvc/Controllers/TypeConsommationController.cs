@@ -66,8 +66,9 @@ namespace GestionConsommationVehiculeMvc.Controllers
         public ActionResult Edit(int id = 0)
         {
             typeconsommation typeconsommation = db.typeconsommations.Find(id);
-            if (typeconsommation == null)
+            if  (typeconsommation == null)
             {
+                
                 return HttpNotFound();
             }
             return View(typeconsommation);
