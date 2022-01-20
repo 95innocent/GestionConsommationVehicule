@@ -94,6 +94,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         {
             service service = db.services.Find(id);
             if (service == null)
+            
             {
                 return HttpNotFound();
             }
