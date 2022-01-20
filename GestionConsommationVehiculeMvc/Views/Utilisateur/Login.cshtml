@@ -1,0 +1,43 @@
+﻿@model GestionConsommationVehiculeMvc.Models.utilisateur
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Includes/_Default.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+@RenderPage("~/Views/Inc/_Head.cshtml")
+
+<body style="background-image:url(Assets/fonts/Vehicule.jpg)">
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-4">
+        <div class="login-panel panel panel-default">
+            <div class="panel-heading" style="text-align:center;color:cyan"><b style="text-align:center;color:cyan">Authentification</b></div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <fieldset >
+                        <legend><span style="color:blue">Gestion des Consommations des vehicules dans une societe</span></legend>
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => model.username, new {@class="form-control",autocomplete="off",placeholder="Enter your username",autofocus=""})
+                            @Html.ValidationMessageFor(model => model.username,"",new {@class="error-text"})
+                        </div>
+                        <div class="form-group">
+                            @*@Html.TextBoxFor(model => model.password, new {@class="form-control",autocomplete="off",placeholder="Enter your password"})
+                            @Html.ValidationMessageFor(model=>model.password)*@
+
+                            <input type="password" name="password" placeholder="Enter Your Password"  class="form-control"/>
+                        </div>
+                        <button  style="font-size:20px" type="submit" class="btn btn-primary  col-md-4">Login</button> 
+                        <button style="font-size:20px" type="reset" class="btn btn-reset  col-md-4">Reset</button>
+                    </fieldset>
+                }
+                
+            </div>
+        </div>
+    </div><!-- /.col-->
+</div><!-- /.row -->
+</body>
+</html>
