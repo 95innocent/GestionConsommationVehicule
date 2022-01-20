@@ -24,7 +24,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         public ActionResult Index1()
         {
             var utilisateurs = db.utilisateurs.Include(u => u.profile).Include(u => u.service);
-            return View(utilisateurs.ToList());
+             return View(utilisateurs.ToList());
         }
 
         //
