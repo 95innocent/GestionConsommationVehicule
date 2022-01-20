@@ -29,6 +29,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
          [HttpPost]
         public ActionResult Index(DateTime? datedebut,DateTime?datefin)
         {
+            ViewBag.Rapport = "Rapport detaille du:" + datedebut +  "Au"   + datefin;
             var consommations = db.consommations.Where(c => c.DateConsommation >= datedebut && c.DateConsommation <= datefin).ToList();
             return View(consommations);
         }
