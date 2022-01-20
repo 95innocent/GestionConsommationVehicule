@@ -27,7 +27,8 @@
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
-				if ( !w.document ) {
+			    if (!w.document)
+			    {
 					throw new Error( "jQuery requires a window with a document" );
 				}
 				return factory( w );
