@@ -153,6 +153,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
             utilisateur utilisateur = db.utilisateurs.Find(id);
             if (utilisateur == null)
             {
+                
                 return HttpNotFound();
             }
             return View(utilisateur);
