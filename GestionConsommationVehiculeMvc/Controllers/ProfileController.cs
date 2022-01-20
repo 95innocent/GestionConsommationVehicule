@@ -75,7 +75,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         // POST: /Profile/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(profile profile)
+        public ActionResult  Edit(profile profile)
         {
             if (ModelState.IsValid)
             {
