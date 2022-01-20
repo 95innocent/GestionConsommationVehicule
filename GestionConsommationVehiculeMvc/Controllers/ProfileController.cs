@@ -16,7 +16,7 @@ namespace GestionConsommationVehiculeMvc.Controllers
         //
         // GET: /Profile/
 
-        public ActionResult Index()
+        public ActionResult  Index()
         {
             return View(db.profiles.ToList());
         }
