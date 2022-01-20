@@ -63,9 +63,10 @@ namespace GestionConsommationVehiculeMvc.Controllers
 
         public ActionResult Edit(int id = 0)
         {
-            service service = db.services.Find(id);
+            service  service = db.services.Find(id);
             if (service == null)
             {
+                
                 return HttpNotFound();
             }
             return View(service);
